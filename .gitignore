@@ -1,0 +1,11 @@
+build/
+.qtcreator/
+*.user
+*.user.*
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.exe
+*.obj
+*.o

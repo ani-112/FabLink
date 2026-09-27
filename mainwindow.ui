@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>FabLink - SECS/GEM Equipment Simulator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text"><string>FabLink — Semiconductor Equipment Communication Simulator</string></property>
+      <property name="styleSheet"><string>font-size: 20pt; font-weight: bold;</string></property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="infoLayout">
+      <item row="0" column="0"><widget class="QLabel" name="equipmentIdTitle"><property name="text"><string>Equipment ID:</string></property></widget></item>
+      <item row="0" column="1"><widget class="QLabel" name="equipmentIdLabel"><property name="text"><string>-</string></property></widget></item>
+      <item row="1" column="0"><widget class="QLabel" name="modelTitle"><property name="text"><string>Model:</string></property></widget></item>
+      <item row="1" column="1"><widget class="QLabel" name="modelLabel"><property name="text"><string>-</string></property></widget></item>
+      <item row="2" column="0"><widget class="QLabel" name="portTitle"><property name="text"><string>HSMS Port:</string></property></widget></item>
+      <item row="2" column="1"><widget class="QLabel" name="portLabel"><property name="text"><string>-</string></property></widget></item>
+      <item row="0" column="2"><widget class="QLabel" name="connectionTitle"><property name="text"><string>Connection:</string></property></widget></item>
+      <item row="0" column="3"><widget class="QLabel" name="connectionStatusLabel"><property name="text"><string>DISCONNECTED</string></property></widget></item>
+      <item row="1" column="2"><widget class="QLabel" name="gemTitle"><property name="text"><string>GEM State:</string></property></widget></item>
+      <item row="1" column="3"><widget class="QLabel" name="gemStateLabel"><property name="text"><string>NOT_COMMUNICATING / OFFLINE</string></property></widget></item>
+      <item row="2" column="2"><widget class="QLabel" name="eventTitle"><property name="text"><string>Last Event:</string></property></widget></item>
+      <item row="2" column="3"><widget class="QLabel" name="lastEventLabel"><property name="text"><string>-</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item><widget class="QPushButton" name="startButton"><property name="text"><string>Start Equipment</string></property></widget></item>
+      <item><widget class="QPushButton" name="stopButton"><property name="text"><string>Stop Equipment</string></property><property name="enabled"><bool>false</bool></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="logTitle">
+      <property name="text"><string>Communication Log</string></property>
+      <property name="styleSheet"><string>font-size: 14pt; font-weight: bold;</string></property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="logTextEdit">
+      <property name="readOnly"><bool>true</bool></property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
